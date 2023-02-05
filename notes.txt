@@ -1,0 +1,7 @@
+CPTs: Aktivitäten, Leitungsteam, Downloads, Kalender, (Fundkiste)
+
+Vorgesehene Features:
+- Multilangual
+- Shop
+- Fundkiste
+- passwortgeschützte Gallerie

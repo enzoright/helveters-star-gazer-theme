@@ -1,0 +1,43 @@
+header{
+    height: 100px;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.page-wrap{
+    padding: 2rem 0;
+}
+
+header .top-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .container{
+    display: flex;
+    justify-content: flex-end; /*unbeding noch Padding verändern*/
+    align-items: center;
+    height: 100%;
+}
+
+header .top-menu li a{
+    padding: 0.25rem 1rem;
+    color: #3B3B3A;
+}
+
+header .top-menu li:first-child a{
+    padding-left: 0;
+}
+
+header .top-menu li:last-child a{
+    padding-right: 0;
+}
+
+header .top-menu li .sub-menu{
+    display: none;
+}
+
+
