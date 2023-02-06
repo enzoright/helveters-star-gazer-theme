@@ -26,6 +26,7 @@ header .container{
 header .top-menu li a{
     padding: 0.25rem 1rem;
     color: #3B3B3A;
+    font-family: 'Merriweather';
 }
 
 header .top-menu li:first-child a{
@@ -40,4 +41,9 @@ header .top-menu li .sub-menu{
     display: none;
 }
 
+/*@font-face {
+    font-family: Merriweather Regular;
+    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/Merriweathe.ttf);
+    font-weight:bold;
+}*/
 
