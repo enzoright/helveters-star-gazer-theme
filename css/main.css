@@ -1,8 +1,9 @@
 header{
-    height: 100px;
+    height: 95px;
     background-color: #FFFFFF;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 .page-wrap{
@@ -24,9 +25,25 @@ header .container{
 }
 
 header .top-menu li a{
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 1.5rem;
     color: #3B3B3A;
     font-family: 'Merriweather';
+    font-size: larger;
+    text-decoration: none;
+}
+
+header .top-menu li{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .top-menu li a:hover{
+    text-decoration: underline;
 }
 
 header .top-menu li:first-child a{
@@ -39,7 +56,18 @@ header .top-menu li:last-child a{
 
 header .top-menu li .sub-menu{
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+header .top-menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
 
 /*@font-face {
     font-family: Merriweather Regular;
