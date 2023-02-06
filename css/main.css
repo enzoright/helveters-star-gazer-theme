@@ -42,7 +42,15 @@ header .top-menu li{
     justify-content: flex-start;
 }
 
+header .top-menu li a:active{
+    text-decoration: underline;
+}
+
 header .top-menu li a:hover{
+    text-decoration: none;
+}
+
+header .top-menu li a:focus{
     text-decoration: underline;
 }
 
@@ -67,6 +75,28 @@ header .top-menu li .sub-menu{
 header .top-menu .menu-item-has-children:hover .sub-menu {
     display: block;
 }
+
+/* Aktivitäts-CSS */
+
+.aktivitaet-container{
+    margin-top: 50px;
+}
+
+.aktivitaet-img, .aktivitaet-file{
+    flex: 0 1 0%;
+    padding: 0;
+}
+
+.aktivitaet-content, .aktivitaet-titel{
+    width: 100%;
+    max-width: 640px;
+}
+
+.aktivitaet-daten{
+    display: flex;
+    padding-right: 50px;
+}
+
 
 
 /*@font-face {

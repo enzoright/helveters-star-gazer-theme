@@ -10,7 +10,7 @@ add_action('wp_enqueue_scripts', 'load_css');
 
 function load_js(){
     wp_enqueue_script('jquery');
-    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
+    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), false, true);
     wp_enqueue_script('bootstrap');
 }
 add_action('wp_enqueue_scripts', 'load_js');
@@ -24,5 +24,29 @@ register_nav_menus(
         'top-menu' => 'Top Menu Location',
         'mobile-menu' => 'Mobile Menu Location'
     )
-)
+);
+
+function aktivitaet_post_type(){
+    $args = array(
+        'labels' => array(
+            'name' => 'Aktivitäten',
+            'singular_name' => 'Aktivität',
+            'add_new' 				=> 'Hinzufügen',
+		    'add_new_item' 			=> 'Neuee Aktivität hinzufügen',
+            'edit_item' 			=> 'Aktivität bearbeiten',
+            'new_item' 				=> 'Neue Aktivität',
+            'view_item' 			=> 'Aktivität ansehen',
+            'search_items' 			=> 'Nach Aktivität suchen',
+            'not_found' 			=> 'Keine Aktivität gefunden',
+            'not_found_in_trash' 	=> 'Keine Aktivitäten im Papierkorb',
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+        'hierarchical' => 'false',
+        'menu_icon' => 'dashicons-smiley'
+    );
+    register_post_type('aktivitaeten', $args);
+}
+add_action('init', 'aktivitaet_post_type');
 ?>
