@@ -25,11 +25,11 @@
                     <div class="col-12 row">
                       <div class="col-2">von:</div>
                       <div class="col-10">
-                        <?php the_field('aktivitaet_start'); ?> Uhr
+                        <?php the_field('aktivitaet_start'); ?>
                       </div>
                       <div class="col-2">bis:</div>
                       <div class="col-10">
-                        <?php the_field('aktivitaet_end'); ?> Uhr
+                        <?php the_field('aktivitaet_end'); ?>
                       </div>
                     </div>
 

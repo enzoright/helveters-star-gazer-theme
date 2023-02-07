@@ -1,3 +1,4 @@
++ bedeutet erfüllt, - bedeutet ist noch zu erfüllen
 CPTs: Aktivitäten, Leitungsteam, Downloads, Kalender, (Fundkiste)
 
 Vorgesehene Features:
@@ -10,7 +11,7 @@ Normale Page
 - möglich ein Bild oben einzufügen
 
 Aktivitätsfeature
-- Uhrzeit -> normal anzeigen
++ Uhrzeit -> normal anzeigen
 - Aktivitäten in der Vergangenheit automatisches löschen
 - externes acf für Aktivitäten
 - ics erstellen für die Aktivität im Header
@@ -21,7 +22,7 @@ Menü
 - Submenü schön unter Hauptmenüpunkte linksbündig machen, genug Platz 200x60, dunkel hinterlegen, wenn man eins auswählt
 
 Frontpage
-- Hauptbild auswählen können im CMS (vlt auch Bild verschieben)
+- Heroimage auswählen können im CMS (vlt auch im Bildeditor verschieben)
 - Text anzeigen lassen
 
 Stufen
