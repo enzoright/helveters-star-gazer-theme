@@ -30,11 +30,17 @@ Stufen
 - möglich über CMS QP einzubinden
 
 Infos
-- CPT Downloads
-- CPT Kalender mit Taxonomy Stufen, damit man pro Stufe einen eigenen Kalender hat
-- ICS für den Kalendar erstellen
-- Kalendar pro Stufe oder mehrere ein ICS File runterladen, so dass wenn man Wölfe & Pfader runterlädt nicht alles im Kalender doppelt angezeigt wird
+    Downloads
+        - CPT Downloads
+    Kalender
+        - CPT Kalender mit Taxonomy Stufen, damit man pro Stufe einen eigenen Kalender hat
+        - ICS für den Kalendar erstellen
+        - Kalendar pro Stufe oder mehrere ein ICS File runterladen, so dass wenn man Wölfe & Pfader runterlädt nicht alles im Kalender doppelt angezeigt wird
+        - Anmeldung für das Lager direkt bei den Lagern verlinken
+        - Lageranmeldung
 
 Weitere Features
 - Anmeldung via Website, statt PDF Formular
 - Schnupperbutton und Anmeldung via Website -> Schickt eine Mail an die betreffenden Stufenleitung
+- Online Umfrage oder Vorschlagstool für die Teilnehmenden, damit wir als Leiter mehr Ideen haben, was wir machen könnten
+- Favicon hinzufügen

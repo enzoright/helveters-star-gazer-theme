@@ -53,6 +53,7 @@ function aktivitaet_post_type()
 }
 add_action('init', 'aktivitaet_post_type');
 
+
 function aktivitaet_download()
 {
     // $post_id = get_the_ID();

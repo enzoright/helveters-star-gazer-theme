@@ -1,5 +1,5 @@
 header{
-    height: 95px;
+    height: 60px;
     background-color: #FFFFFF;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -10,6 +10,12 @@ header{
     padding: 2rem 0;
 }
 
+h1{
+    font-family: 'Merriweather';
+}
+
+/* Menu Top */
+
 header .menu-top-bar-container{
     height: 100%;
 }
@@ -19,45 +25,33 @@ header .top-menu{
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100%;
-    align-items: center;
 }
 
 header .container{
     display: flex;
-    justify-content: flex-end; /*unbeding noch Padding verändern*/
+    justify-content: flex-end; 
     align-items: center;
     height: 100%;
 }
 
 header .top-menu li a{
-    padding: 0.25rem 1.5rem;
     color: #3B3B3A;
     font-family: 'Merriweather';
     font-size: larger;
     text-decoration: none;
 }
 
-header .top-menu li{
+header .top-menu > li{
+    padding: 15px 2rem;
     position: relative;
     height: 100%;
-    width: 200px;
     list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-header .top-menu li a:active{
-    text-decoration: underline;
+    justify-content: flex-end;
 }
 
 header .top-menu li a:hover{
     text-decoration: none;
-}
-
-header .top-menu li a:focus{
-    text-decoration: underline;
 }
 
 header .top-menu li:first-child a{
@@ -82,14 +76,49 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     display: block;
 }
 
-.sub-menu{
-    z-index: 1;
+.current-menu-item > a{
+    border-bottom: #000 solid 1px;
 }
+
+/* Top Menü - Sub Menü */
+
+.sub-menu{
+    list-style-type: none;
+    z-index: 0;
+    padding:0px;
+}
+
+.sub-menu > li{
+    white-space: nowrap;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 2rem 0px 2rem
+}
+
+.sub-menu > li:hover{
+    background-color: #E4E4E4;
+}
+
 
 /* Aktivitäts-CSS */
 
-.aktivitaet-container{
-    margin-top: 50px;
+.aktivitaet-text{
+    margin-top: 24px;
+}
+
+.accordion{
+    border: #000 solid 2px;
+    margin-bottom: 5px;
+}
+
+.accordion-button{
+    padding: 15px 15px 15px 15px;
+    min-height: 80px;
+}
+
+.aktivitaet-container, h1{
+    margin-top: 40px;
 }
 
 .aktivitaet-img, .aktivitaet-img img{
@@ -111,7 +140,35 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     padding-right: 50px;
 }
 
+/* Footer */
 
+.footer{
+    margin: 50px 0px 0px 0px;
+    height: 400px;
+    background-color: #242423;
+    width: 100%;
+}
+
+.footer-info{
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+
+.footer-info a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.copyright{
+    border: #FFFFFF solid 1px;
+    margin: 30px 0px 60px 0px;
+    border-radius: 2px;
+}
+
+.copyright-txt{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /*@font-face {
     font-family: Merriweather Regular;
