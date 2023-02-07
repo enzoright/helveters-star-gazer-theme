@@ -5,3 +5,35 @@ Vorgesehene Features:
 - Shop
 - Fundkiste
 - passwortgeschützte Gallerie
+
+Normale Page
+- möglich ein Bild oben einzufügen
+
+Aktivitätsfeature
+- Uhrzeit -> normal anzeigen
+- Aktivitäten in der Vergangenheit automatisches löschen
+- externes acf für Aktivitäten
+- ics erstellen für die Aktivität im Header
+
+Menü
+- Logo links anzeigen einmal mit & ohne Text. Kann hardcoded sein oder durch CMS möglich
+- Hauptmenü Li-Tags rechtsbündig machen
+- Submenü schön unter Hauptmenüpunkte linksbündig machen, genug Platz 200x60, dunkel hinterlegen, wenn man eins auswählt
+
+Frontpage
+- Hauptbild auswählen können im CMS (vlt auch Bild verschieben)
+- Text anzeigen lassen
+
+Stufen
+- Alle Stufen ausser APV & Elternrat untereinander anzeigen 
+- möglich über CMS QP einzubinden
+
+Infos
+- CPT Downloads
+- CPT Kalender mit Taxonomy Stufen, damit man pro Stufe einen eigenen Kalender hat
+- ICS für den Kalendar erstellen
+- Kalendar pro Stufe oder mehrere ein ICS File runterladen, so dass wenn man Wölfe & Pfader runterlädt nicht alles im Kalender doppelt angezeigt wird
+
+Weitere Features
+- Anmeldung via Website, statt PDF Formular
+- Schnupperbutton und Anmeldung via Website -> Schickt eine Mail an die betreffenden Stufenleitung

@@ -92,6 +92,10 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     margin-top: 50px;
 }
 
+.aktivitaet-img, .aktivitaet-img img{
+    max-width: 300px;
+}
+
 .aktivitaet-img, .aktivitaet-file{
     flex: 0 1 0%;
     padding: 0;
