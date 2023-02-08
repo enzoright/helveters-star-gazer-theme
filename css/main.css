@@ -2,12 +2,13 @@ header{
     height: 60px;
     background-color: #FFFFFF;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 8px;
     
 }
 
 .page-wrap{
     padding: 2rem 0;
+    min-height: 100vh;
 }
 
 h1{
@@ -68,7 +69,7 @@ header .top-menu li .sub-menu{
     top: 100%;
     left: 0;
     background: #FFFFFF;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 8px;
 }
 
 
@@ -76,7 +77,13 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     display: block;
 }
 
-.current-menu-item > a{
+.current-menu-item > a, .current-menu-parent > a{
+    border-bottom: #000 solid 1px;
+}
+
+/* Hover Menu-Item*/
+
+.menu-item:hover > a{
     border-bottom: #000 solid 1px;
 }
 
@@ -144,7 +151,7 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
 
 .footer{
     margin: 50px 0px 0px 0px;
-    height: 400px;
+    height: 370px;
     background-color: #242423;
     width: 100%;
 }
