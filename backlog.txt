@@ -24,10 +24,15 @@ Menü
 Frontpage
 - Heroimage auswählen können im CMS (vlt auch im Bildeditor verschieben)
 - Text anzeigen lassen
+- Newsletter für die Windrose
+- Blogartig
 
 Stufen
 - Alle Stufen ausser APV & Elternrat untereinander anzeigen 
 - möglich über CMS QP einzubinden
+
+Leitungsteam
+- Steckbrief
 
 Infos
     Downloads

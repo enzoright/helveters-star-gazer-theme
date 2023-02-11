@@ -1,3 +1,7 @@
+*{
+    font-family: 'Quicksand Regular';
+}
+
 header{
     height: 60px;
     background-color: #FFFFFF;
@@ -12,7 +16,7 @@ header{
 }
 
 h1{
-    font-family: 'Merriweather';
+    font-family: 'Merriweather Bold';
 }
 
 /* Menu Top */
@@ -182,4 +186,19 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/Merriweathe.ttf);
     font-weight:bold;
 }*/
+
+@font-face {
+    font-family: Quicksand Regular;
+    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/fonts/static/Quicksand-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Merriweather Bold;
+    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+    font-family: Merriweather Logo;
+    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/fonts/Merriweather-Black.ttf);
+}
 

@@ -28,6 +28,21 @@ register_nav_menus(
     )
 );
 
+
+function custom_logo_setup(){
+    $args = array(
+        'height'               => 100,
+		'width'                => 100,
+		'flex-height'          => true,
+		'flex-width'           => true,
+		'header-text'          => array( 'Pfadi Helveter St. Georgen', 'site-description' ),
+		'unlink-homepage-logo' => true, 
+    );
+    add_theme_support('custom-logo', $args);
+}
+add_action('after_setup_theme', 'custom_logo_setup');
+
+
 function aktivitaet_post_type()
 {
     $args = array(
