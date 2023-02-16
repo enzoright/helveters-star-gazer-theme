@@ -1,53 +1,73 @@
-*{
-    font-family: 'Quicksand Regular';
+* {
+    font-family: 'SourceSansPro Regular';
 }
 
-header{
-    height: 60px;
-    background-color: #FFFFFF;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 8px;
-    
+.btn{
+    background-color: #B02828;
+    border: 1 px solid #851E1E;
+    color: #FFFFFF;
+    width: 130px;
+    height: 40px;
 }
 
-.page-wrap{
+.wp-block-heading{
+    margin-bottom: 25px;
+}
+
+.btn:hover{
+    background-color: #FF3B3B;
+}
+
+.page-wrap {
     padding: 2rem 0;
     min-height: 100vh;
 }
 
-h1{
+h1 {
     font-family: 'Merriweather Bold';
 }
 
 /* Menu Top */
 
-header .menu-top-bar-container{
+header .menu-top-bar-container {
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-header .top-menu{
+header .top-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header .container{
+header .container {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
 }
 
-header .top-menu li a{
-    color: #3B3B3A;
-    font-family: 'Merriweather';
-    font-size: larger;
-    text-decoration: none;
+header {
+    height: 70px;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 8px;
+
 }
 
-header .top-menu > li{
-    padding: 15px 2rem;
+header .top-menu li a {
+    color: #3B3B3A;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header .top-menu>li {
+    padding: 20px 2rem;
     position: relative;
     height: 100%;
     list-style-type: none;
@@ -55,19 +75,19 @@ header .top-menu > li{
     justify-content: flex-end;
 }
 
-header .top-menu li a:hover{
+header .top-menu li a:hover {
     text-decoration: none;
 }
 
-header .top-menu li:first-child a{
+header .top-menu li:first-child a {
     padding-left: 0;
 }
 
-header .top-menu li:last-child a{
+header .top-menu li:last-child a {
     padding-right: 0;
 }
 
-header .top-menu li .sub-menu{
+header .top-menu li .sub-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -81,25 +101,50 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     display: block;
 }
 
-.current-menu-item > a, .current-menu-parent > a{
+.current-menu-item>a,
+.current-menu-parent>a {
     border-bottom: #000 solid 1px;
+}
+
+.logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Merriweather Logo';
+    font-size: large;
+}
+
+.logo-container div {
+    font-family: 'Merriweather Logo';
+}
+
+.site-logo {
+    margin-right: 20px;
+}
+
+.site-logo span img,
+.site-logo a img {
+    max-height: 50px;
+    max-width: 55px;
 }
 
 /* Hover Menu-Item*/
 
-.menu-item:hover > a{
+.menu-item:hover>a {
     border-bottom: #000 solid 1px;
 }
 
 /* Top Menü - Sub Menü */
 
-.sub-menu{
+.sub-menu {
     list-style-type: none;
     z-index: 0;
-    padding:0px;
+    padding: 0px;
 }
 
-.sub-menu > li{
+.sub-menu>li {
     white-space: nowrap;
     height: 50px;
     display: flex;
@@ -107,78 +152,117 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     padding: 0px 2rem 0px 2rem
 }
 
-.sub-menu > li:hover{
+.sub-menu>li:hover {
     background-color: #E4E4E4;
 }
 
 
 /* Aktivitäts-CSS */
 
-.aktivitaet-text{
+.aktivitaet-text {
     margin-top: 24px;
 }
 
-.accordion{
+.accordion {
     border: #000 solid 2px;
     margin-bottom: 5px;
 }
 
-.accordion-button{
+.accordion-button {
     padding: 15px 15px 15px 15px;
     min-height: 80px;
 }
 
-.aktivitaet-container, h1{
+.aktivitaet-container,
+h1 {
     margin-top: 40px;
 }
 
-.aktivitaet-img, .aktivitaet-img img{
+.aktivitaet-img,
+.aktivitaet-img img {
     max-width: 300px;
 }
 
-.aktivitaet-img, .aktivitaet-file{
+.aktivitaet-img,
+.aktivitaet-file {
     flex: 0 1 0%;
     padding: 0;
 }
 
-.aktivitaet-content, .aktivitaet-titel{
+.aktivitaet-content,
+.aktivitaet-titel {
     width: 100%;
     max-width: 640px;
 }
 
-.aktivitaet-daten{
+.aktivitaet-daten {
     display: flex;
     padding-right: 50px;
 }
 
 /* Footer */
 
-.footer{
+.footer {
     margin: 50px 0px 0px 0px;
-    height: 370px;
+    height: 450px;
     background-color: #242423;
     width: 100%;
+    position: fixed;
+    margin-top: auto;
+    position: relative;
 }
 
-.footer-info{
+.footer-info {
     padding-top: 50px;
     color: #FFFFFF;
 }
 
-.footer-info a{
+.footer-info a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.copyright{
+.copyright {
     border: #FFFFFF solid 1px;
     margin: 30px 0px 60px 0px;
     border-radius: 2px;
 }
 
-.copyright-txt{
+.copyright-txt {
     display: flex;
     justify-content: flex-end;
+
+    background: linear-gradient(to right, #f00, #f90, #ff0, #0f0, #00f, #90f, #f0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-image {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 130px;
+    justify-content: center;
+}
+
+.content-container {
+    margin-bottom: 70px;
+}
+
+.front-page-title{
+    margin-bottom: 30px;
 }
 
 /*@font-face {
@@ -187,9 +271,34 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     font-weight:bold;
 }*/
 
+/* Optimize for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* Insert your CSS styles here */
+}
+
+/* Optimize for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Insert your CSS styles here */
+}
+
+/* Optimize for screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Insert your CSS styles here */
+}
+
+/* Optimize for screens larger than 1200px */
+@media (min-width: 1200px) and (max-width: 2379px) {}
+
+/* Optimize for screens larger than 1200px */
+@media (min-width: 2379px) {
+    header>.nav-container {
+        max-width: 2379px;
+    }
+}
+
 @font-face {
-    font-family: Quicksand Regular;
-    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/fonts/static/Quicksand-SemiBold.ttf);
+    font-family: SourceSansPro Regular;
+    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/fonts/SourceSansPro-Regular.ttf);
 }
 
 @font-face {
@@ -201,4 +310,3 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
     font-family: Merriweather Logo;
     src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/fonts/Merriweather-Black.ttf);
 }
-

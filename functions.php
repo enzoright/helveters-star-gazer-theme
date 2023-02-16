@@ -87,3 +87,32 @@ function aktivitaet_download()
     endif;
 }
 add_action('admin_post_aktivitaet_download', 'aktivitaet_download');
+
+function add_svg_mime_type( $mimes ) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter( 'upload_mimes', 'add_svg_mime_type' );
+
+function custom_theme_customize_register($wp_customize) {
+    // Hero Image Section
+    $wp_customize->add_section('hero_image_section', array(
+        'title' => __('Hero Image', 'custom_theme'),
+        'description' => __('Upload a hero image for the homepage', 'custom_theme'),
+        'priority' => 25
+    ));
+
+    // Hero Image Setting
+    $wp_customize->add_setting('hero_image', array(
+        'default' => '',
+        'sanitize_callback' => 'absint'
+    ));
+
+    // Hero Image Control
+    $wp_customize->add_control(new WP_Customize_Media_Control($wp_customize, 'hero_image_control', array(
+        'label' => __('Select Hero Image', 'custom_theme'),
+        'section' => 'hero_image_section',
+        'settings' => 'hero_image'
+    )));
+}
+add_action('customize_register', 'custom_theme_customize_register');
