@@ -3,7 +3,7 @@
 }
 
 .btn{
-    background-color: #B02828;
+    background-color: #ED3B42;
     border: 1 px solid #851E1E;
     color: #FFFFFF;
     width: 130px;
@@ -15,7 +15,7 @@
 }
 
 .btn:hover{
-    background-color: #FF3B3B;
+    background-color: #F1706C;
 }
 
 .page-wrap {
@@ -267,6 +267,21 @@ h1 {
 
 .img-styling{
     width: 100%;
+}
+
+.accordion-header{
+    background-color: #ED3B42;
+}
+
+.accordion-button:focus{
+    border-color: #B02828;
+    box-shadow: 0 0 0 0.25rem #F6A4A6;
+}
+
+.accordion-button:not(.collapsed){
+    color: #B02828;
+    background-color: #F6A4A6;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
 /*@font-face {
