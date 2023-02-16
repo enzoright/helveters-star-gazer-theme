@@ -49,3 +49,4 @@ Weitere Features
 - Schnupperbutton und Anmeldung via Website -> Schickt eine Mail an die betreffenden Stufenleitung (Im Pop-Up kann man den VOr- & Nachnamen, EMail übergeben und die Stufe auswählen, wo man schnuppern möchte)
 - Online Umfrage oder Vorschlagstool für die Teilnehmenden, damit wir als Leiter mehr Ideen haben, was wir machen könnten
 - Favicon hinzufügen
+- 404 Fehler Meme von echtem Video der RBahn

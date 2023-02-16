@@ -1,4 +1,5 @@
 <?php get_header();?>
+<img class="img-styling" src="<?php echo get_hero_image_url(); ?>" alt="Small Hero Image">
 <section class="page-wrap">
 <div class="container content-container">
     <h1><?php the_title();?></h1>

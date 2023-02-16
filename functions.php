@@ -116,3 +116,110 @@ function custom_theme_customize_register($wp_customize) {
     )));
 }
 add_action('customize_register', 'custom_theme_customize_register');
+
+function cpt_hero_image() {
+    $labels = array(
+        'name'                  => 'Hero Images',
+        'singular_name'         => 'Hero Image',
+        'menu_name'             => 'Hero Images',
+        'name_admin_bar'        => 'Hero Image',
+        'add_new'               => 'Add New',
+        'add_new_item'          => 'Add New Hero Image',
+        'new_item'              => 'New Hero Image',
+        'edit_item'             => 'Edit Hero Image',
+        'view_item'             => 'View Hero Image',
+        'all_items'             => 'All Hero Images',
+        'search_items'          => 'Search Hero Images',
+        'parent_item_colon'     => 'Parent Hero Images:',
+        'not_found'             => 'No Hero Images found.',
+        'not_found_in_trash'    => 'No Hero Images found in Trash.'
+    );
+
+    $args = array(
+        'labels'                => $labels,
+        'public'                => true,
+        'has_archive'           => true,
+        'menu_icon'             => 'dashicons-format-image',
+        'supports'              => array( 'title', 'thumbnail' ),
+    );
+
+    register_post_type( 'hero-image', $args );
+}
+add_action( 'init', 'cpt_hero_image' );
+
+function add_hero_image_meta_box() {
+    add_meta_box(
+        'hero-image-meta-box',
+        'Hero Image',
+        'render_hero_image_meta_box',
+        'page',
+        'normal',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'add_hero_image_meta_box' );
+
+function render_hero_image_meta_box( $post ) {
+    wp_nonce_field( basename( __FILE__ ), 'hero_image_nonce' );
+    $hero_image_id = get_post_meta( $post->ID, 'hero_image_id', true );
+    $hero_image = wp_get_attachment_image_src( $hero_image_id, 'full' );
+    ?>
+    <label for="hero_image_id">Select Hero Image:</label>
+    <input type="hidden" name="hero_image_id" id="hero_image_id" value="<?php echo esc_attr( $hero_image_id ); ?>">
+    <img src="<?php echo esc_url( $hero_image[0] ); ?>" style="max-width: 100%; max-height: 200px;">
+    <button id="hero_image_upload_button" class="button">Select Hero Image</button>
+    <button id="hero_image_remove_button" class="button">Remove Hero Image</button>
+    <script>
+        jQuery(document).ready(function($){
+            var hero_image_frame;
+            $('#hero_image_upload_button').click(function(event){
+                event.preventDefault();
+                if ( hero_image_frame ) {
+                    hero_image_frame.open();
+                    return;
+                }
+                hero_image_frame = wp.media.frames.hero_image_frame = wp.media({
+                    title: 'Select Hero Image',
+                    button: {
+                        text: 'Use this image'
+                    },
+                    multiple: false
+                });
+                hero_image_frame.on('select', function(){
+                    var attachment = hero_image_frame.state().get('selection').first().toJSON();
+                    $('#hero_image_id').val(attachment.id);
+                    $('img').attr('src', attachment.url);
+                });
+                hero_image_frame.open();
+            });
+            $('#hero_image_remove_button').click(function(event){
+                event.preventDefault();
+                $('#hero_image_id').val('');
+                $('img').attr('src', '');
+            });
+        });
+    </script>
+    <?php
+}
+
+function save_hero_image_meta_box( $post_id ) {
+    if ( ! isset( $_POST['hero_image_nonce'] ) || ! wp_verify_nonce( $_POST['hero_image_nonce'], basename( __FILE__ ) ) ) {
+        return $post_id;
+    }
+    $post_type = get_post_type_object( get_post_type( $post_id ) );
+    if ( ! current_user_can( $post_type->cap->edit_post, $post_id ) ) {
+        return $post_id;
+    }
+    if ( isset( $_POST['hero_image_id'] ) ) {
+        update_post_meta( $post_id, 'hero_image_id', sanitize_text_field( $_POST['hero_image_id'] ) );
+    } else {
+        delete_post_meta( $post_id, 'hero_image_id' );
+    }
+}
+add_action( 'save_post', 'save_hero_image_meta_box' );
+
+function get_hero_image_url() {
+    $hero_image_id = get_post_meta( get_the_ID(), 'hero_image_id', true );
+    $hero_image = wp_get_attachment_image_src( $hero_image_id, 'full' );
+    return $hero_image[0];
+}
