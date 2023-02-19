@@ -16,6 +16,7 @@ Aktivitätsfeature
 - externes acf für Aktivitäten
 - ics erstellen für die Aktivität im Header
 - Abmelden / Anmelden per Pfadiname oder Vor & Nachname + Button
+- Infobrett als Pop-Up darstellen über JS, statt als Seite
 
 Menü
 + Logo links anzeigen einmal mit & ohne Text. Kann hardcoded sein oder durch CMS möglich
