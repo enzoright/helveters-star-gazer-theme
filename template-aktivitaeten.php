@@ -1,6 +1,10 @@
-<?php // When u have a Blog it will show there all files
+<?php
+/*
+Template Name: Aktivitaeten
+*/
 ?>
 <?php get_header();?>
+<img class="img-styling" src="<?php echo get_hero_image_url(); ?>" alt="Small Hero Image">
 <div class="container content-container">
    <h1>Aktivitäten</h1>
    <div class="aktivitaet-text">

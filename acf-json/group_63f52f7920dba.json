@@ -1,0 +1,195 @@
+{
+    "key": "group_63f52f7920dba",
+    "title": "Group Leitungsteam",
+    "fields": [
+        {
+            "key": "field_63f5313ff2df6",
+            "label": "Leitungsperson",
+            "name": "scoutleader_leitungsperson",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_63f53158f2df7",
+                    "label": "Vorname",
+                    "name": "scoutleader_vorname",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f5313ff2df6"
+                },
+                {
+                    "key": "field_63f5317ef2df8",
+                    "label": "Nachname",
+                    "name": "scoutleader_nachname",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f5313ff2df6"
+                },
+                {
+                    "key": "field_63f53186f2df9",
+                    "label": "Vulgo",
+                    "name": "scoutleader_vulgo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f5313ff2df6"
+                },
+                {
+                    "key": "field_63f5327441a8a",
+                    "label": "Funktionsname",
+                    "name": "scoutleader_funktionsname",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f5313ff2df6"
+                },
+                {
+                    "key": "field_63f53193f2dfa",
+                    "label": "Bild",
+                    "name": "scoutleader_bild",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_63f5313ff2df6"
+                },
+                {
+                    "key": "field_63f531caba4f9",
+                    "label": "Kategorie",
+                    "name": "scoutleader_kategorie",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Biber": "Biber",
+                        "Wölfe": "Wölfe",
+                        "Wölfinnen": "Wölfinnen",
+                        "Pfader": "Pfader",
+                        "Pfaderinnen": "Pfaderinnen",
+                        "Pios": "Pios",
+                        "Rover": "Rover",
+                        "Materialstelle": "Materialstelle",
+                        "Website": "Website",
+                        "Finanzen": "Finanzen",
+                        "Abteilungsleitung": "Abteilungsleitung",
+                        "Stufenleitung": "Stufenleitung"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "parent_repeater": "field_63f5313ff2df6"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-leitungsteam.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1677013636
+}

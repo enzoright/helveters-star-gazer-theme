@@ -1,8 +1,14 @@
 <div class="aktivitaet-container">
 
-  <?php if (have_posts()):
-    while (have_posts()):
-      the_post(); ?>
+  <?php 
+  $args = array(
+    'post_type'   => array('post', 'aktivitaeten'),
+    'post_status' => 'publish',
+    );
+    $new_post_loop = new WP_Query( $args );
+  if ($new_post_loop->have_posts()):
+    while ($new_post_loop->have_posts()):
+      $new_post_loop->the_post(); ?>
 
       <!-- accordion thing-->
 

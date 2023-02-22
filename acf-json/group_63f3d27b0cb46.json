@@ -1,0 +1,172 @@
+{
+    "key": "group_63f3d27b0cb46",
+    "title": "CPT Aktivität",
+    "fields": [
+        {
+            "key": "field_63f3d27bf9a70",
+            "label": "Email",
+            "name": "aktivitaet_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f3d28ef9a71",
+            "label": "Start der Aktivität",
+            "name": "aktivitaet_start",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l, d. F Y H:i",
+            "return_format": "l, d. F Y H:i",
+            "first_day": 1
+        },
+        {
+            "key": "field_63f3d31cf9a72",
+            "label": "Schluss der Aktivität",
+            "name": "aktivitaet_end",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "l, d. F Y H:i",
+            "return_format": "l, d. F Y H:i",
+            "first_day": 1
+        },
+        {
+            "key": "field_63f3d3a9f9a73",
+            "label": "Text vor der Email",
+            "name": "aktivitaet_email_txt",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_63f3d3dbf9a74",
+            "label": "Stufen",
+            "name": "aktivitaet_group",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Biber": "Biber",
+                "Wolfsstufe": "Wolfsstufe",
+                "Pfadistufe": "Pfadistufe",
+                "Alle": "Alle"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0
+        },
+        {
+            "key": "field_63f3d40df9a75",
+            "label": "Bild hinzufügen",
+            "name": "aktivitaet_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_63f3d423f9a76",
+            "label": "Datei hinzufügen",
+            "name": "aktivitaet_file",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "aktivitaeten"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1677012792
+}

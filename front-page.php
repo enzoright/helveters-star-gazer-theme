@@ -4,7 +4,7 @@
     <!-- Hier können weitere Elemente wie Überschrift und Text hinzugefügt werden -->
 </div>
 <section class="page-wrap">
-<div class="container">
+<div class="container front-container">
     <h1 class="front-page-title"><?php the_title();?></h1>
     <?php get_template_part('includes/section', 'content');?>
     <button class="btn">Schnuppern</button>

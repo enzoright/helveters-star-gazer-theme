@@ -61,8 +61,9 @@ function aktivitaet_post_type()
         'public' => true,
         'has_archive' => true,
         'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
-        'hierarchical' => 'false',
-        'menu_icon' => 'dashicons-smiley'
+        'hierarchical' => false,
+        'menu_icon' => 'dashicons-smiley',
+        'has_archive' => false,
     );
     register_post_type('aktivitaeten', $args);
 }
