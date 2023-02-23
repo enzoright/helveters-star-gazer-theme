@@ -11,6 +11,10 @@
     margin-top: 30px;
 }
 
+.accordion-item > h2{
+    margin: 0px;
+}
+
 .btn {
     background-color: #ED3B42;
     border: 1 px solid #851E1E;
@@ -136,8 +140,8 @@ header .top-menu .menu-item-has-children:hover .sub-menu {
 
 .site-logo span {
     display: flex;
-    max-height: 55px;
-    max-width: 60px;
+    height: 55px;
+    width: 60px;
 
 }
 
@@ -300,56 +304,6 @@ h1 {
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 
-/*@font-face {
-    font-family: Merriweather Regular;
-    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/Merriweathe.ttf);
-    font-weight:bold;
-}*/
-
-/* Optimize for screens smaller than 768px */
-@media (max-width: 767px) {
-    /* Insert your CSS styles here */
-}
-
-/* Optimize for screens between 768px and 991px */
-@media (min-width: 768px) and (max-width: 991px) {
-  
-}
-
-/* Optimize for screens between 992px and 1199px */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Optimize for screens larger than 1200px */
-@media (min-width: 1200px) and (max-width: 2379px) {
- 
-}
-
-
-/* Optimize for screens larger than 1200px */
-@media (min-width: 2379px) {
-    header>.nav-container {
-        max-width: 2379px;
-    }
-
-  
-}
-
-@font-face {
-    font-family: SourceSansPro Regular;
-    src: url('../fonts/SourceSansPro-Regular.ttf');
-}
-
-@font-face {
-    font-family: Merriweather Bold;
-    src: url('../fonts/Merriweather-Bold.ttf');
-}
-
-@font-face {
-    font-family: Merriweather Logo;
-    src: url('../fonts/Merriweather-Black.ttf');
-}
 
 .front-container p,
 .front-container h4 {
@@ -370,58 +324,59 @@ h1 {
 .scoutleader-info {
     width: 250px;
     display: flex;
-    background-color: #D9D9D9;
+    background-color: #D32E2E;
     justify-content: center;
     flex-wrap: wrap;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    color: white;
 }
 
 .scoutleader-info div {
     width: 100%;
 }
 
-.scoutleader-info-txt{
+.scoutleader-info-txt {
     padding-left: 25px;
     padding-top: 15px;
     padding-bottom: 7px;
 }
 
-.scoutleader-info-txt h5{
+.scoutleader-info-txt h5 {
     font-family: 'Merriweather Bold';
 }
 
-.scoutleader-mail{
-    
+.scoutleader-mail {
+
     width: 100%;
-    background-color: #868686;
+    background-color: #930000;
     padding-top: 9px;
     padding-bottom: 9px;
     color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     text-decoration: none;
-    
+
 }
 
-.scoutleader-mail div{
+.scoutleader-mail div {
     font-family: 'Merriweather Bold';
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.scoutleader-mail svg{
+.scoutleader-mail svg {
     margin-left: 15px;
     margin-top: -2px;
 }
 
-.scoutleader-info div h5{
+.scoutleader-info div h5 {
     margin: 0;
     padding: 0;
 }
 
-.scoutleader-info div h6{
+.scoutleader-info div h6 {
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -448,4 +403,196 @@ h1 {
     object-fit: cover;
     width: auto;
     height: 100%;
+}
+
+.logo-title {
+    font-family: 'Merriweather Logo';
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    margin-top: 70px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+         
+.circle-button {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #BA0B0B 0%, #C71414  51%, #D32E2E  100%);
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .circle-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .circle-button p{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(13deg);
+    font-size: initial;
+    font-family: 'Merriweather Bold';
+  }
+ 
+  
+         
+  .btn-grad {
+    
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+.newsletter{
+    margin-top: 50px;
+}
+
+.newsletter h2{
+    font-family: 'Merriweather Bold';
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/*@font-face {
+    font-family: Merriweather Regular;
+    src: url(http://alpha.pfadihelveter.ch/wp-content/themes/helveters-star-gazer-theme/Merriweathe.ttf);
+    font-weight:bold;
+}*/
+
+/* Optimize for screens smaller than 768px */
+@media (max-width: 767px) {
+    .logo-title {
+        display: none;
+    }
+
+    .site-logo span {
+        display: flex;
+        height: 45px;
+        width: 50px;
+
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .hero-image {
+        height: 45vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Optimize for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .logo-title {
+        display: none;
+    }
+
+    .site-logo span {
+        display: flex;
+        height: 45px;
+        width: 50px;
+
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .hero-image {
+        height: 45vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Optimize for screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-title {
+        display: none;
+    }
+}
+
+/* Optimize for screens larger than 1200px */
+@media (min-width: 1200px) and (max-width: 2379px) {}
+
+
+/* Optimize for screens larger than 1200px */
+@media (min-width: 2379px) {
+    header>.nav-container {
+        max-width: 2379px;
+    }
+
+
+}
+
+@font-face {
+    font-family: SourceSansPro Regular;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: Merriweather Bold;
+    src: url('../fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {
+    font-family: Merriweather Logo;
+    src: url('../fonts/Merriweather-Black.ttf');
 }

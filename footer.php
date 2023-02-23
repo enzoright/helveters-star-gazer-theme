@@ -7,7 +7,7 @@
         <br />
         <a target="_blank" href="https://www.pfadihelveter.ch">www.pfadihelveter.ch</a>
         <br/><br/>
-        <a target="_blank" href="pfadihelveter.ch/wp-admin">Login</a>
+        <a target="_blank" href="https://pfadihelveter.ch/wp-admin">Login</a>
         <div class="copyright col-lg-12"></div>
         <div class="copyright-txt">
             &lt;/code&gt; love by Gasto<br/>

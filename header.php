@@ -44,7 +44,7 @@
                     //if (has_custom_logo()) : the_custom_logo(); endif; 
                     ?>
                 </div>
-                <div>Pfadi Helveter St. Georgen</div>
+                <div class="logo-title">Pfadi Helveter St. Georgen</div>
 
 
             </div>
