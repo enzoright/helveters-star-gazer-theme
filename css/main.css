@@ -364,11 +364,11 @@ h1 {
 }
 
 .scoutleader-container {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .scoutleader-info {
-    
+    width: 250px;
     display: flex;
     background-color: #D9D9D9;
     justify-content: center;
@@ -392,8 +392,7 @@ h1 {
 }
 
 .scoutleader-mail{
-    display: flex;
-    justify-content: center;
+    
     width: 100%;
     background-color: #868686;
     padding-top: 9px;
@@ -401,7 +400,15 @@ h1 {
     color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    text-decoration: none;
+    
+}
+
+.scoutleader-mail div{
     font-family: 'Merriweather Bold';
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .scoutleader-mail svg{
@@ -415,7 +422,8 @@ h1 {
 }
 
 .scoutleader-info div h6{
-    margin-top: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .scoutleader-img-container {

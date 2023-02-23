@@ -89,8 +89,29 @@
                 },
                 {
                     "key": "field_63f5327441a8a",
-                    "label": "Funktionsname",
-                    "name": "scoutleader_funktionsname",
+                    "label": "Primärer Funktionsname (meistens Leitungsfunktion)",
+                    "name": "scoutleader_funktion1",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_63f5313ff2df6"
+                },
+                {
+                    "key": "field_63f69e36ceb8d",
+                    "label": "Sekundärer Funktionsname",
+                    "name": "scoutleader_funktion2",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -191,5 +212,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1677013636
+    "modified": 1677106803
 }
