@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php $image = wp_get_attachment_image_src(get_theme_mod('hero_image'), 'full'); ?>
 <div class="hero-image" style="background-image: url('<?php echo esc_url($image[0]); ?>');">
-    <button class="circle-button">
+    <button class="circle-button" id="circle-button">
         <p>Jetzt: Abenteuer erleben!</p>
     </button>
 </div>

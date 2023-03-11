@@ -14,19 +14,27 @@ function load_js()
     wp_enqueue_script('jquery');
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), false, true);
     wp_enqueue_script('bootstrap');
+    wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true );
+
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
 // Add Menus to CMS Wordpress
 add_theme_support('menus');
 
-// Menus
+/* Menus */ 
 register_nav_menus(
     array(
         'top-menu' => 'Top Menu Location',
         'mobile-menu' => 'Mobile Menu Location'
     )
 );
+
+function register_footer_menu() {
+    register_nav_menu('footer-menu', __( 'Footer Menu' ));
+}
+add_action('init', 'register_footer_menu');
+
 
 
 function custom_logo_setup(){
